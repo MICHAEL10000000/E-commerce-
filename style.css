@@ -1,0 +1,150 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  /* Primary */
+--Orange: hsl(26, 100%, 55%);
+--Pale-orange: hsl(25, 100%, 94%);
+
+/* Neutral */
+--Very-dark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black/* (with 75% opacity for lightbox background) */: hsl(0, 0%, 0%);
+}
+
+/* HEADER SECTION */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    
+  }
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+li {
+    list-style-type: none;
+  }
+ul {
+    display: flex;
+    gap: 1rem;
+
+  }
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+#avatar {
+    height: 10vh; 
+ }
+
+/* IMAGES */
+.main {
+    height: 60vh;
+    width: 30rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .thumbnail {
+    width: 6rem;
+    height: 18vh;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+  }
+.thumbnail_img{
+  margin-left: 1rem;
+}
+
+/* TEXT SECTION */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /*  margin: 0 15% 0 15%; */
+  gap: 5rem;
+  
+}
+.company_profile > h1 {
+  margin: 1rem 0rem 1.5rem 0rem;
+  font-size: 2.5rem;
+}
+.text{
+  padding-bottom: 3rem;
+  width: 70ch;
+}
+.company_profile>h4{
+  color: var(--Orange);
+  font-weight: bold
+}
+.sneakers_desc {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--Dark-grayish-blue);
+}
+.pricing {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.pricing>h4{
+  color: var(--Orange);
+  background-color: var(--Pale-orange);
+  padding: 0rem 0.2rem 0rem 0.2rem;
+  border-radius: 0.2rem;
+}
+#old_price {
+  text-decoration: line-through;
+  font-weight: 900;
+  color: var(--Dark-grayish-blue);
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  gap: 2.5rem; 
+  background-color: var(--Light-grayish-blue);
+  border-radius: 0.5rem;
+}
+.cart {
+  display: flex;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--Orange);
+  font-weight: bold;
+}
+.carting{
+  display: flex;
+  gap: 1rem;
+  
+}
+
+
+.numbers{
+  background-color: var(--Orange);
+  color: white;
+  width: 1.7rem;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 3.9rem;
+  display: none;
+}
